@@ -11,27 +11,25 @@ a{
     padding: 10px 0;
     background-color:  #2e4053;
 }
+.medsos .container{
+    max-width: 1500px;
+    padding: 0 16px;
+    margin: auto;
+}
 
 .medsos ul li{
     display: inline-block;
     color: #fff;
     margin-right: 15px;
 }
-.container {
+.home .container {
     width: 50%;
     margin: 0 auto;
-}
-header{
-
-}
-header h1{
-    /* float: left */
+}  
+header h1{ 
     padding: 15px 0;
     color: #2e4053;
-}
-header ul{
-    /* float: right; */
-}
+} 
 header ul li{
     display: inline-block;
 }
@@ -56,6 +54,9 @@ header ul li a:hover{
     align-items: center;
 }
 .navbar{
+    max-width: 1500px;
+    padding: 0 16px;
+    margin: auto;
     display: flex;
     justify-content: space-between;
 }
@@ -89,28 +90,21 @@ footer .container{
     margin: auto;
 
 }
-.servis{
+.home, .servis {
     color: #fff;
     font-style: italic;
     padding: 50px 0;
     text-align: center;
     background-color: #2e4053        
 }
-.box{
-    text-align: left;
-    margin: 100px;  
-}
-.box::after{
-    content: " ";
-    display: block;
-    clear: both;
-}
-.box .col-4 {
-    width: 25%;
-    padding: 20px;
-    box-sizing: border-box;
-    text-align: center;
-    float: left;
+.home .container .box { 
+    padding: 50px 0;
+    display: flex;
+     justify-content: space-evenly; 
+    align-items: center;  
+  }
+.home .container .box .col-4 {  
+    text-align: center; 
 }
 .icon{
     width: 70px;
@@ -122,11 +116,7 @@ footer .container{
     font-size: 30px;
     margin: 0 auto;
     color: #fff;
-}
-.box .col-4 h4{
-    margin: 20px 0;
-    color: white
-}
+} 
 .about h4{
     text-align: left;
 
@@ -135,5 +125,19 @@ footer .container{
     text-align: center;
 }
 
+.servis .container {
+    width: 80%;
+    margin: 0 auto;
+}
+.servis .container .box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
 
+.servis .container .box .col-4 {
+    width: 100%;
+}
 
+.servis .container .box .col-4 img {
+    width: 100%;
+}
